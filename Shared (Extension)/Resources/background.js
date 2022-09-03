@@ -1,6 +1,5 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request: ", request);
-
-    if (request.greeting === "hello")
-        sendResponse({ farewell: "goodbye" });
-});
+//browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+//    if (request.type == "Found types") {
+//        browser.runtime.sendMessage({type: "Read types response", types: request.types});
+//    }
+//});
