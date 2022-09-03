@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AFD460C28C345DD00AB7F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD460B28C345DD00AB7F22 /* AppDelegate.swift */; };
+		5AFD460E28C345DD00AB7F22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD460D28C345DD00AB7F22 /* SceneDelegate.swift */; };
+		5AFD461128C345DD00AB7F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460F28C345DD00AB7F22 /* LaunchScreen.storyboard */; };
+		5AFD461428C345DD00AB7F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD461228C345DD00AB7F22 /* Main.storyboard */; };
+		5AFD461D28C345DD00AB7F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD461C28C345DD00AB7F22 /* AppDelegate.swift */; };
+		5AFD462028C345DD00AB7F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD461E28C345DD00AB7F22 /* Main.storyboard */; };
+		5AFD462728C345DD00AB7F22 /* Blueberry Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5AFD462628C345DD00AB7F22 /* Blueberry Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AFD463128C345DD00AB7F22 /* Blueberry Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5AFD463028C345DD00AB7F22 /* Blueberry Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AFD463728C345DD00AB7F22 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F228C345DB00AB7F22 /* Main.html */; };
+		5AFD463828C345DD00AB7F22 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F228C345DB00AB7F22 /* Main.html */; };
+		5AFD463928C345DD00AB7F22 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F428C345DB00AB7F22 /* Icon.png */; };
+		5AFD463A28C345DD00AB7F22 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F428C345DB00AB7F22 /* Icon.png */; };
+		5AFD463B28C345DD00AB7F22 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F528C345DB00AB7F22 /* Style.css */; };
+		5AFD463C28C345DD00AB7F22 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F528C345DB00AB7F22 /* Style.css */; };
+		5AFD463D28C345DD00AB7F22 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F628C345DB00AB7F22 /* Script.js */; };
+		5AFD463E28C345DD00AB7F22 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F628C345DB00AB7F22 /* Script.js */; };
+		5AFD463F28C345DD00AB7F22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD45F728C345DB00AB7F22 /* ViewController.swift */; };
+		5AFD464028C345DD00AB7F22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD45F728C345DB00AB7F22 /* ViewController.swift */; };
+		5AFD464128C345DD00AB7F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F828C345DD00AB7F22 /* Assets.xcassets */; };
+		5AFD464228C345DD00AB7F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45F828C345DD00AB7F22 /* Assets.xcassets */; };
+		5AFD464328C345DD00AB7F22 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD45FA28C345DD00AB7F22 /* SafariWebExtensionHandler.swift */; };
+		5AFD464428C345DD00AB7F22 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD45FA28C345DD00AB7F22 /* SafariWebExtensionHandler.swift */; };
+		5AFD464528C345DD00AB7F22 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FC28C345DD00AB7F22 /* _locales */; };
+		5AFD464628C345DD00AB7F22 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FC28C345DD00AB7F22 /* _locales */; };
+		5AFD464728C345DD00AB7F22 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FD28C345DD00AB7F22 /* images */; };
+		5AFD464828C345DD00AB7F22 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FD28C345DD00AB7F22 /* images */; };
+		5AFD464928C345DD00AB7F22 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FE28C345DD00AB7F22 /* manifest.json */; };
+		5AFD464A28C345DD00AB7F22 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FE28C345DD00AB7F22 /* manifest.json */; };
+		5AFD464B28C345DD00AB7F22 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FF28C345DD00AB7F22 /* background.js */; };
+		5AFD464C28C345DD00AB7F22 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD45FF28C345DD00AB7F22 /* background.js */; };
+		5AFD464D28C345DD00AB7F22 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460028C345DD00AB7F22 /* content.js */; };
+		5AFD464E28C345DD00AB7F22 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460028C345DD00AB7F22 /* content.js */; };
+		5AFD464F28C345DD00AB7F22 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460128C345DD00AB7F22 /* popup.html */; };
+		5AFD465028C345DD00AB7F22 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460128C345DD00AB7F22 /* popup.html */; };
+		5AFD465128C345DD00AB7F22 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460228C345DD00AB7F22 /* popup.css */; };
+		5AFD465228C345DD00AB7F22 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460228C345DD00AB7F22 /* popup.css */; };
+		5AFD465328C345DE00AB7F22 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460328C345DD00AB7F22 /* popup.js */; };
+		5AFD465428C345DE00AB7F22 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 5AFD460328C345DD00AB7F22 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AFD462828C345DD00AB7F22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFD45EC28C345DB00AB7F22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFD462528C345DD00AB7F22;
+			remoteInfo = "Blueberry Extension (iOS)";
+		};
+		5AFD463228C345DD00AB7F22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFD45EC28C345DB00AB7F22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFD462F28C345DD00AB7F22;
+			remoteInfo = "Blueberry Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AFD465A28C345DE00AB7F22 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5AFD462728C345DD00AB7F22 /* Blueberry Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD466128C345DE00AB7F22 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5AFD463128C345DD00AB7F22 /* Blueberry Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5AFD45F328C345DB00AB7F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		5AFD45F428C345DB00AB7F22 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5AFD45F528C345DB00AB7F22 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		5AFD45F628C345DB00AB7F22 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		5AFD45F728C345DB00AB7F22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AFD45F828C345DD00AB7F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AFD45FA28C345DD00AB7F22 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		5AFD45FC28C345DD00AB7F22 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		5AFD45FD28C345DD00AB7F22 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		5AFD45FE28C345DD00AB7F22 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		5AFD45FF28C345DD00AB7F22 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		5AFD460028C345DD00AB7F22 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		5AFD460128C345DD00AB7F22 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		5AFD460228C345DD00AB7F22 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		5AFD460328C345DD00AB7F22 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		5AFD460828C345DD00AB7F22 /* Blueberry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blueberry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFD460B28C345DD00AB7F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AFD460D28C345DD00AB7F22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5AFD461028C345DD00AB7F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AFD461328C345DD00AB7F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AFD461528C345DD00AB7F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFD461A28C345DD00AB7F22 /* Blueberry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blueberry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFD461C28C345DD00AB7F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AFD461F28C345DD00AB7F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AFD462128C345DD00AB7F22 /* Blueberry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blueberry.entitlements; sourceTree = "<group>"; };
+		5AFD462628C345DD00AB7F22 /* Blueberry Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Blueberry Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFD462B28C345DD00AB7F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFD463028C345DD00AB7F22 /* Blueberry Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Blueberry Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFD463528C345DD00AB7F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFD463628C345DD00AB7F22 /* Blueberry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blueberry.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AFD460528C345DD00AB7F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD461728C345DD00AB7F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD462328C345DD00AB7F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD462D28C345DD00AB7F22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AFD45EB28C345DB00AB7F22 = {
+			isa = PBXGroup;
+			children = (
+				5AFD45F028C345DB00AB7F22 /* Shared (App) */,
+				5AFD45F928C345DD00AB7F22 /* Shared (Extension) */,
+				5AFD460A28C345DD00AB7F22 /* iOS (App) */,
+				5AFD461B28C345DD00AB7F22 /* macOS (App) */,
+				5AFD462A28C345DD00AB7F22 /* iOS (Extension) */,
+				5AFD463428C345DD00AB7F22 /* macOS (Extension) */,
+				5AFD460928C345DD00AB7F22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AFD45F028C345DB00AB7F22 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD45F728C345DB00AB7F22 /* ViewController.swift */,
+				5AFD45F828C345DD00AB7F22 /* Assets.xcassets */,
+				5AFD45F128C345DB00AB7F22 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		5AFD45F128C345DB00AB7F22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD45F228C345DB00AB7F22 /* Main.html */,
+				5AFD45F428C345DB00AB7F22 /* Icon.png */,
+				5AFD45F528C345DB00AB7F22 /* Style.css */,
+				5AFD45F628C345DB00AB7F22 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AFD45F928C345DD00AB7F22 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD45FA28C345DD00AB7F22 /* SafariWebExtensionHandler.swift */,
+				5AFD45FB28C345DD00AB7F22 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		5AFD45FB28C345DD00AB7F22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD45FC28C345DD00AB7F22 /* _locales */,
+				5AFD45FD28C345DD00AB7F22 /* images */,
+				5AFD45FE28C345DD00AB7F22 /* manifest.json */,
+				5AFD45FF28C345DD00AB7F22 /* background.js */,
+				5AFD460028C345DD00AB7F22 /* content.js */,
+				5AFD460128C345DD00AB7F22 /* popup.html */,
+				5AFD460228C345DD00AB7F22 /* popup.css */,
+				5AFD460328C345DD00AB7F22 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AFD460928C345DD00AB7F22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD460828C345DD00AB7F22 /* Blueberry.app */,
+				5AFD461A28C345DD00AB7F22 /* Blueberry.app */,
+				5AFD462628C345DD00AB7F22 /* Blueberry Extension.appex */,
+				5AFD463028C345DD00AB7F22 /* Blueberry Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AFD460A28C345DD00AB7F22 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD460B28C345DD00AB7F22 /* AppDelegate.swift */,
+				5AFD460D28C345DD00AB7F22 /* SceneDelegate.swift */,
+				5AFD460F28C345DD00AB7F22 /* LaunchScreen.storyboard */,
+				5AFD461228C345DD00AB7F22 /* Main.storyboard */,
+				5AFD461528C345DD00AB7F22 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		5AFD461B28C345DD00AB7F22 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD461C28C345DD00AB7F22 /* AppDelegate.swift */,
+				5AFD461E28C345DD00AB7F22 /* Main.storyboard */,
+				5AFD462128C345DD00AB7F22 /* Blueberry.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		5AFD462A28C345DD00AB7F22 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD462B28C345DD00AB7F22 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		5AFD463428C345DD00AB7F22 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				5AFD463528C345DD00AB7F22 /* Info.plist */,
+				5AFD463628C345DD00AB7F22 /* Blueberry.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AFD460728C345DD00AB7F22 /* Blueberry (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFD465B28C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry (iOS)" */;
+			buildPhases = (
+				5AFD460428C345DD00AB7F22 /* Sources */,
+				5AFD460528C345DD00AB7F22 /* Frameworks */,
+				5AFD460628C345DD00AB7F22 /* Resources */,
+				5AFD465A28C345DE00AB7F22 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFD462928C345DD00AB7F22 /* PBXTargetDependency */,
+			);
+			name = "Blueberry (iOS)";
+			productName = "Blueberry (iOS)";
+			productReference = 5AFD460828C345DD00AB7F22 /* Blueberry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AFD461928C345DD00AB7F22 /* Blueberry (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFD466228C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry (macOS)" */;
+			buildPhases = (
+				5AFD461628C345DD00AB7F22 /* Sources */,
+				5AFD461728C345DD00AB7F22 /* Frameworks */,
+				5AFD461828C345DD00AB7F22 /* Resources */,
+				5AFD466128C345DE00AB7F22 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFD463328C345DD00AB7F22 /* PBXTargetDependency */,
+			);
+			name = "Blueberry (macOS)";
+			productName = "Blueberry (macOS)";
+			productReference = 5AFD461A28C345DD00AB7F22 /* Blueberry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AFD462528C345DD00AB7F22 /* Blueberry Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFD465728C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry Extension (iOS)" */;
+			buildPhases = (
+				5AFD462228C345DD00AB7F22 /* Sources */,
+				5AFD462328C345DD00AB7F22 /* Frameworks */,
+				5AFD462428C345DD00AB7F22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blueberry Extension (iOS)";
+			productName = "Blueberry Extension (iOS)";
+			productReference = 5AFD462628C345DD00AB7F22 /* Blueberry Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5AFD462F28C345DD00AB7F22 /* Blueberry Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFD465E28C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry Extension (macOS)" */;
+			buildPhases = (
+				5AFD462C28C345DD00AB7F22 /* Sources */,
+				5AFD462D28C345DD00AB7F22 /* Frameworks */,
+				5AFD462E28C345DD00AB7F22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blueberry Extension (macOS)";
+			productName = "Blueberry Extension (macOS)";
+			productReference = 5AFD463028C345DD00AB7F22 /* Blueberry Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AFD45EC28C345DB00AB7F22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5AFD460728C345DD00AB7F22 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					5AFD461928C345DD00AB7F22 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					5AFD462528C345DD00AB7F22 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					5AFD462F28C345DD00AB7F22 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5AFD45EF28C345DB00AB7F22 /* Build configuration list for PBXProject "Blueberry" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AFD45EB28C345DB00AB7F22;
+			productRefGroup = 5AFD460928C345DD00AB7F22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AFD460728C345DD00AB7F22 /* Blueberry (iOS) */,
+				5AFD461928C345DD00AB7F22 /* Blueberry (macOS) */,
+				5AFD462528C345DD00AB7F22 /* Blueberry Extension (iOS) */,
+				5AFD462F28C345DD00AB7F22 /* Blueberry Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AFD460628C345DD00AB7F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD463928C345DD00AB7F22 /* Icon.png in Resources */,
+				5AFD461128C345DD00AB7F22 /* LaunchScreen.storyboard in Resources */,
+				5AFD463728C345DD00AB7F22 /* Main.html in Resources */,
+				5AFD463D28C345DD00AB7F22 /* Script.js in Resources */,
+				5AFD464128C345DD00AB7F22 /* Assets.xcassets in Resources */,
+				5AFD461428C345DD00AB7F22 /* Main.storyboard in Resources */,
+				5AFD463B28C345DD00AB7F22 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD461828C345DD00AB7F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD463A28C345DD00AB7F22 /* Icon.png in Resources */,
+				5AFD463C28C345DD00AB7F22 /* Style.css in Resources */,
+				5AFD462028C345DD00AB7F22 /* Main.storyboard in Resources */,
+				5AFD463E28C345DD00AB7F22 /* Script.js in Resources */,
+				5AFD464228C345DD00AB7F22 /* Assets.xcassets in Resources */,
+				5AFD463828C345DD00AB7F22 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD462428C345DD00AB7F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD464B28C345DD00AB7F22 /* background.js in Resources */,
+				5AFD465128C345DD00AB7F22 /* popup.css in Resources */,
+				5AFD464F28C345DD00AB7F22 /* popup.html in Resources */,
+				5AFD464728C345DD00AB7F22 /* images in Resources */,
+				5AFD464928C345DD00AB7F22 /* manifest.json in Resources */,
+				5AFD464528C345DD00AB7F22 /* _locales in Resources */,
+				5AFD464D28C345DD00AB7F22 /* content.js in Resources */,
+				5AFD465328C345DE00AB7F22 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD462E28C345DD00AB7F22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD464C28C345DD00AB7F22 /* background.js in Resources */,
+				5AFD465228C345DD00AB7F22 /* popup.css in Resources */,
+				5AFD465028C345DD00AB7F22 /* popup.html in Resources */,
+				5AFD464828C345DD00AB7F22 /* images in Resources */,
+				5AFD464A28C345DD00AB7F22 /* manifest.json in Resources */,
+				5AFD464628C345DD00AB7F22 /* _locales in Resources */,
+				5AFD464E28C345DD00AB7F22 /* content.js in Resources */,
+				5AFD465428C345DE00AB7F22 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AFD460428C345DD00AB7F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD463F28C345DD00AB7F22 /* ViewController.swift in Sources */,
+				5AFD460C28C345DD00AB7F22 /* AppDelegate.swift in Sources */,
+				5AFD460E28C345DD00AB7F22 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD461628C345DD00AB7F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD464028C345DD00AB7F22 /* ViewController.swift in Sources */,
+				5AFD461D28C345DD00AB7F22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD462228C345DD00AB7F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD464328C345DD00AB7F22 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFD462C28C345DD00AB7F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFD464428C345DD00AB7F22 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AFD462928C345DD00AB7F22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFD462528C345DD00AB7F22 /* Blueberry Extension (iOS) */;
+			targetProxy = 5AFD462828C345DD00AB7F22 /* PBXContainerItemProxy */;
+		};
+		5AFD463328C345DD00AB7F22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFD462F28C345DD00AB7F22 /* Blueberry Extension (macOS) */;
+			targetProxy = 5AFD463228C345DD00AB7F22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AFD45F228C345DB00AB7F22 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AFD45F328C345DB00AB7F22 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		5AFD460F28C345DD00AB7F22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AFD461028C345DD00AB7F22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5AFD461228C345DD00AB7F22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AFD461328C345DD00AB7F22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AFD461E28C345DD00AB7F22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AFD461F28C345DD00AB7F22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AFD465528C345DE00AB7F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AFD465628C345DE00AB7F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5AFD465828C345DE00AB7F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blueberry Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry.Extension;
+				PRODUCT_NAME = "Blueberry Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AFD465928C345DE00AB7F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blueberry Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry.Extension;
+				PRODUCT_NAME = "Blueberry Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AFD465C28C345DE00AB7F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Blueberry;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry;
+				PRODUCT_NAME = Blueberry;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AFD465D28C345DE00AB7F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Blueberry;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry;
+				PRODUCT_NAME = Blueberry;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AFD465F28C345DE00AB7F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Blueberry.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blueberry Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry.Extension;
+				PRODUCT_NAME = "Blueberry Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AFD466028C345DE00AB7F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Blueberry.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blueberry Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry.Extension;
+				PRODUCT_NAME = "Blueberry Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AFD466328C345DE00AB7F22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Blueberry.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Blueberry;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry;
+				PRODUCT_NAME = Blueberry;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AFD466428C345DE00AB7F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Blueberry.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9W375LA38U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Blueberry;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamomiledev.Blueberry;
+				PRODUCT_NAME = Blueberry;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AFD45EF28C345DB00AB7F22 /* Build configuration list for PBXProject "Blueberry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFD465528C345DE00AB7F22 /* Debug */,
+				5AFD465628C345DE00AB7F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFD465728C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFD465828C345DE00AB7F22 /* Debug */,
+				5AFD465928C345DE00AB7F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFD465B28C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFD465C28C345DE00AB7F22 /* Debug */,
+				5AFD465D28C345DE00AB7F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFD465E28C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFD465F28C345DE00AB7F22 /* Debug */,
+				5AFD466028C345DE00AB7F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFD466228C345DE00AB7F22 /* Build configuration list for PBXNativeTarget "Blueberry (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFD466328C345DE00AB7F22 /* Debug */,
+				5AFD466428C345DE00AB7F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AFD45EC28C345DB00AB7F22 /* Project object */;
+}
