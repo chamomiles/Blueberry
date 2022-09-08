@@ -1,3 +1,22 @@
+var dict = {
+    "ISTJ": 0,
+    "ISFJ": 0,
+    "ESTJ": 0,
+    "ESFJ": 0,
+    "ISTP": 0,
+    "ISFP": 0,
+    "ESTP": 0,
+    "ESFP": 0,
+    "ENFP": 0,
+    "ENTP": 0,
+    "INFP": 0,
+    "INTP": 0,
+    "ENFJ": 0,
+    "ENTJ": 0,
+    "INFJ": 0,
+    "INTJ": 0
+};
+
 var types = getTypes();
 
 console.log("types: ", types);

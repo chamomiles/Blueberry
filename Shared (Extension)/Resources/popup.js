@@ -3,35 +3,40 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function findTypes() {
-    browser.tabs.executescript({file:"content.js"});
+    browser.tabs.executeScript({file:"content.js"});
 }
 
-browser.runtime.onMessage.addEventListener((request) => {
+browser.runtime.onMessage.addListener((request) => {
     if (request.type == "Read types response") {
-        let countDiv = document.getElementById("type_list");
+//        let countDiv = document.getElementById("type_list");
         
-        var unique = request.types.filter(onlyUnique);
+        document.getElementById("INTJ").innerHTML = new "hi";
         
-        var filtered = unique.filter(function (el) {
-            return el != null && el != "" && el != " ";
-        });
+//        var unique = request.types.filter(onlyUnique);
+        var pageTypes = request.types;
         
-        if (filtered != null && filtered.length > 0) {
+//        var filtered = unique.filter(function (el) {
+//            return el != null && el != "" && el != " ";
+//        });
+        
+        if (pageTypes != null && pageTypes.length > 0) {
             
-            var ul = document.createElement('ul');
-            ul.setAttribute('id', 'proList');
+//            document.getElementById('INTJ').innerHTML += `${dict['INTJ']}`;
             
-            countDiv.appendChild(ul);
+//            var div = document.createElement('div');
+//            div.setAttribute('id', 'proList');
             
-            filtered.forEach(renderProductList);
+//            countDiv.appendChild(div);
             
-            function renderProductList(element, index, arr) {
-                var li = document.createElement('li');
-                li.setAttribute('class', 'item');
-                
-                ul.appendChild(li);
-                
-                li.innerHTML=li.innerHTML + element;
+//            pageTypes.forEach(renderProductList);
+            
+//            function renderProductList(element, index, arr) {
+//                var div2 = document.createElement('div');
+//                div2.setAttribute('class', 'item');
+//
+//                div.appendChild(div2);
+//
+//                div2.innerHTML=div2.innerHTML + element + ` ${dict[element]}`;
             }
         }
         else {
@@ -41,5 +46,6 @@ browser.runtime.onMessage.addEventListener((request) => {
 });
 
 function onlyUnique(value, index, self) {
+    dict[value] += 1;
     return self.indexOf(value) === index;
 }

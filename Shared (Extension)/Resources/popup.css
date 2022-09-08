@@ -2,12 +2,28 @@
     color-scheme: light dark;
 }
 
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
-    width: 100px;
+    font-size: 20px;
     padding: 10px;
 
     font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;
     text-align: center;
+}
+
+strong {
+    font-size: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
