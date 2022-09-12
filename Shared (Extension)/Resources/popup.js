@@ -8,11 +8,8 @@ function findTypes() {
 
 browser.runtime.onMessage.addListener((request) => {
     if (request.type == "Read types response") {
-
         
         document.getElementById("INTJ").innerHTML = new "hi";
-        
-
         var pageTypes = request.types;
         
     }
