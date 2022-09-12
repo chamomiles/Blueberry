@@ -14,16 +14,17 @@ browser.runtime.onMessage.addListener((request) => {
         
         for (const type of pageTypes) {
             // This increments the html number for each type by 1 on every occurence of that type
-            var typevalue = document.getElementById(type);
-            var number = typevalue.innerHTML;
+            var typeValue = document.getElementById(type);
+            var number = typeValue.innerHTML;
             number++;
-            typevalue.innerHTML = number;
+            typeValue.innerHTML = number;
+            
+            var typeNameId = type + "name";
+            var typeName = document.getElementById(typeNameId);
+            typeValue.style.color = "white";
+            typeName.style.color = "white";
+            typeValue.style.opacity = 1.0;
         }
         
     }
 });
-
-//function onlyUnique(value, index, self) {
-//    dict[value] += 1;
-//    return self.indexOf(value) === index;
-//}

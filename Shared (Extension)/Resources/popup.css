@@ -14,18 +14,29 @@ th {
     padding: 10px;
 }
 
-body, th {
+.count, .name {
+    /*  To make zero values grey  */
+    color: #B0B0B0;
+}
+
+.count {
+    opacity: 0.0;
+}
+
+table, tr, th {
     margin: auto;
     width: 50%;
-      
+}
+
+strong {
+    font-size: 18px;
+}
+
+body {
     font-size: 16px;
 
     font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;
     text-align: center;
-}
-
-strong {
-    font-size: 20px;
 }
 
 @media (prefers-color-scheme: dark) {

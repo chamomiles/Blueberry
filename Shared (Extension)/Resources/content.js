@@ -1,3 +1,5 @@
+const typeNames = ["ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP", "ENFP", "ENTP", "INFP", "INTP", "ENFJ", "ENTJ", "INFJ", "INTJ"];
+
 var dict = {
     "ISTJ": 0,
     "ISFJ": 0,
